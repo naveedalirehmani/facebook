@@ -12,7 +12,7 @@ function event() {
     pass:pass.value
   }
   axios
-    .post("http://localhost:5000/", {
+    .post("http://0.0.0.0:5000/", {
       formData,
     })
     .then((response) => {
