@@ -1,7 +1,12 @@
 const express = require("express");
 const app = express();
 const nodemailer = require("nodemailer");
+const cors = require("cors")
 const PORT = process.env.PORT || 5000;
+
+app.use(cors({
+  methods:["POST","GET"]
+}))
 
 app.use(express.static("public"));
 

