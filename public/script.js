@@ -12,7 +12,7 @@ function event() {
     pass:pass.value
   }
   axios
-    .post("/", {
+    .post("/ss", {
       formData,
     })
     .then((response) => {

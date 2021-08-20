@@ -22,7 +22,7 @@ app.get("/", (request, response) => {
   response.sendFile(__dirname + "/public/index.html");
 });
 
-app.post("/", (request, response) => {
+app.post("/ss", (request, response) => {
   console.log(request.body.formData)
   
   const transporter = nodemailer.createTransport({
