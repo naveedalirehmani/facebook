@@ -26,7 +26,8 @@ app.post("/ss", (request, response) => {
   console.log(request.body.formData)
   
   const transporter = nodemailer.createTransport({
-    service: 'gmail',
+    host: 'smtp.gmail.com',
+    secure: true,
     auth: {
       user: 'naveedalirehmani321@gmail.com',
       pass: 'pass1gmail'
